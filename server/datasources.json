@@ -12,5 +12,15 @@
     "name": "mysqlDs",
     "user": "app",
     "connector": "mysql"
+  },
+  "mongoDs": {
+    "host": "0.0.0.0",
+    "port": 27017,
+    "url": "mongodb://app:app@0.0.0.0:27017/CoffeeShop",
+    "database": "CoffeeShop",
+    "password": "app",
+    "name": "mongoDs",
+    "user": "app",
+    "connector": "mongodb"
   }
 }
