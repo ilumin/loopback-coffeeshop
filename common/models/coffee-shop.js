@@ -13,11 +13,29 @@ module.exports = function(CoffeeShop) {
     }
     cb(null, response);
   };
+
+  CoffeeShop.getName = function(shopId, cb) {
+    CoffeeShop.findById(shopId, function(err, instance) {
+      response = "Name of coffe shop is " + instance.name;
+      cb(null, response);
+      console.log(response);
+    });
+  };
+
   CoffeeShop.remoteMethod(
     'status',
     {
       http: {path: '/status', verb: 'get'},
       returns: {arg: 'status', type: 'string'}
+    }
+  );
+
+  CoffeeShop.remoteMethod(
+    'getName',
+    {
+      http: {path: '/get-name', verb: 'get'},
+      accepts: {arg: 'id', type: 'number', http: {source: 'query'}},
+      returns: {arg: 'name', type: 'string'}
     }
   );
 };
