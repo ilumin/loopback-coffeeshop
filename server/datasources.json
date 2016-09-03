@@ -2,5 +2,15 @@
   "db": {
     "name": "db",
     "connector": "memory"
+  },
+  "mysqlDs": {
+    "host": "",
+    "port": 0,
+    "url": "mysql://app:app@0.0.0.0/CoffeeShop",
+    "database": "",
+    "password": "",
+    "name": "mysqlDs",
+    "user": "",
+    "connector": "mysql"
   }
 }
