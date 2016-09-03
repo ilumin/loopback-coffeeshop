@@ -4,13 +4,13 @@
     "connector": "memory"
   },
   "mysqlDs": {
-    "host": "",
-    "port": 0,
+    "host": "0.0.0.0",
+    "port": 3306,
     "url": "mysql://app:app@0.0.0.0/CoffeeShop",
-    "database": "",
-    "password": "",
+    "database": "CoffeeShop",
+    "password": "app",
     "name": "mysqlDs",
-    "user": "",
+    "user": "app",
     "connector": "mysql"
   }
 }
