@@ -1,6 +1,6 @@
 {
   "name": "Reviewer",
-  "plural": "users",
+  "plural": "reviewers",
   "base": "User",
   "idInjection": true,
   "options": {
