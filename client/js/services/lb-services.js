@@ -164,7 +164,7 @@ module.factory(
          *
          *  - `id` – `{*}` - User id
          *
-         *  - `filter` – `{object=}` - 
+         *  - `filter` – `{object=}` -
          *
          * @param {function(Array.<Object>,Object)=} successCb
          *   Success callback with two arguments: `value`, `responseHeaders`.
@@ -281,7 +281,7 @@ module.factory(
          *
          * Data properties:
          *
-         *  - `count` – `{number=}` - 
+         *  - `count` – `{number=}` -
          */
         "prototype$__count__accessTokens": {
           url: urlBase + "/Users/:id/accessTokens/count",
@@ -389,7 +389,7 @@ module.factory(
          *
          * Data properties:
          *
-         *  - `exists` – `{boolean=}` - 
+         *  - `exists` – `{boolean=}` -
          */
         "exists": {
           url: urlBase + "/Users/:id/exists",
@@ -585,7 +585,7 @@ module.factory(
          *
          * Data properties:
          *
-         *  - `count` – `{number=}` - 
+         *  - `count` – `{number=}` -
          */
         "count": {
           url: urlBase + "/Users/count",
@@ -663,9 +663,9 @@ module.factory(
          *
          * The response body contains properties of the AccessToken created on login.
          * Depending on the value of `include` parameter, the body may contain additional properties:
-         * 
+         *
          *   - `user` - `{User}` - Data of the currently logged in user. (`include=user`)
-         * 
+         *
          *
          */
         "login": {
@@ -738,11 +738,11 @@ module.factory(
          *
          * @param {Object=} parameters Request parameters.
          *
-         *  - `uid` – `{string}` - 
+         *  - `uid` – `{string}` -
          *
-         *  - `token` – `{string}` - 
+         *  - `token` – `{string}` -
          *
-         *  - `redirect` – `{string}` - 
+         *  - `redirect` – `{string}` -
          *
          * @param {function(Object,Object)=} successCb
          *   Success callback with two arguments: `value`, `responseHeaders`.
@@ -1036,93 +1036,93 @@ module.factory(
   "CoffeeShop",
   ['LoopBackResource', 'LoopBackAuth', '$injector', function(Resource, LoopBackAuth, $injector) {
     var R = Resource(
-      urlBase + "/CoffeeShops/:id",
+      urlBase + "/coffee-shops/:id",
       { 'id': '@id' },
       {
 
         // INTERNAL. Use CoffeeShop.reviews.findById() instead.
         "prototype$__findById__reviews": {
-          url: urlBase + "/CoffeeShops/:id/reviews/:fk",
+          url: urlBase + "/coffee-shops/:id/reviews/:fk",
           method: "GET"
         },
 
         // INTERNAL. Use CoffeeShop.reviews.destroyById() instead.
         "prototype$__destroyById__reviews": {
-          url: urlBase + "/CoffeeShops/:id/reviews/:fk",
+          url: urlBase + "/coffee-shops/:id/reviews/:fk",
           method: "DELETE"
         },
 
         // INTERNAL. Use CoffeeShop.reviews.updateById() instead.
         "prototype$__updateById__reviews": {
-          url: urlBase + "/CoffeeShops/:id/reviews/:fk",
+          url: urlBase + "/coffee-shops/:id/reviews/:fk",
           method: "PUT"
         },
 
         // INTERNAL. Use CoffeeShop.reviewers.findById() instead.
         "prototype$__findById__reviewers": {
-          url: urlBase + "/CoffeeShops/:id/reviewers/:fk",
+          url: urlBase + "/coffee-shops/:id/reviewers/:fk",
           method: "GET"
         },
 
         // INTERNAL. Use CoffeeShop.reviewers.destroyById() instead.
         "prototype$__destroyById__reviewers": {
-          url: urlBase + "/CoffeeShops/:id/reviewers/:fk",
+          url: urlBase + "/coffee-shops/:id/reviewers/:fk",
           method: "DELETE"
         },
 
         // INTERNAL. Use CoffeeShop.reviewers.updateById() instead.
         "prototype$__updateById__reviewers": {
-          url: urlBase + "/CoffeeShops/:id/reviewers/:fk",
+          url: urlBase + "/coffee-shops/:id/reviewers/:fk",
           method: "PUT"
         },
 
         // INTERNAL. Use CoffeeShop.reviews() instead.
         "prototype$__get__reviews": {
           isArray: true,
-          url: urlBase + "/CoffeeShops/:id/reviews",
+          url: urlBase + "/coffee-shops/:id/reviews",
           method: "GET"
         },
 
         // INTERNAL. Use CoffeeShop.reviews.create() instead.
         "prototype$__create__reviews": {
-          url: urlBase + "/CoffeeShops/:id/reviews",
+          url: urlBase + "/coffee-shops/:id/reviews",
           method: "POST"
         },
 
         // INTERNAL. Use CoffeeShop.reviews.destroyAll() instead.
         "prototype$__delete__reviews": {
-          url: urlBase + "/CoffeeShops/:id/reviews",
+          url: urlBase + "/coffee-shops/:id/reviews",
           method: "DELETE"
         },
 
         // INTERNAL. Use CoffeeShop.reviews.count() instead.
         "prototype$__count__reviews": {
-          url: urlBase + "/CoffeeShops/:id/reviews/count",
+          url: urlBase + "/coffee-shops/:id/reviews/count",
           method: "GET"
         },
 
         // INTERNAL. Use CoffeeShop.reviewers() instead.
         "prototype$__get__reviewers": {
           isArray: true,
-          url: urlBase + "/CoffeeShops/:id/reviewers",
+          url: urlBase + "/coffee-shops/:id/reviewers",
           method: "GET"
         },
 
         // INTERNAL. Use CoffeeShop.reviewers.create() instead.
         "prototype$__create__reviewers": {
-          url: urlBase + "/CoffeeShops/:id/reviewers",
+          url: urlBase + "/coffee-shops/:id/reviewers",
           method: "POST"
         },
 
         // INTERNAL. Use CoffeeShop.reviewers.destroyAll() instead.
         "prototype$__delete__reviewers": {
-          url: urlBase + "/CoffeeShops/:id/reviewers",
+          url: urlBase + "/coffee-shops/:id/reviewers",
           method: "DELETE"
         },
 
         // INTERNAL. Use CoffeeShop.reviewers.count() instead.
         "prototype$__count__reviewers": {
-          url: urlBase + "/CoffeeShops/:id/reviewers/count",
+          url: urlBase + "/coffee-shops/:id/reviewers/count",
           method: "GET"
         },
 
@@ -1160,7 +1160,7 @@ module.factory(
          * </em>
          */
         "create": {
-          url: urlBase + "/CoffeeShops",
+          url: urlBase + "/coffee-shops",
           method: "POST"
         },
 
@@ -1198,7 +1198,7 @@ module.factory(
          * </em>
          */
         "upsert": {
-          url: urlBase + "/CoffeeShops",
+          url: urlBase + "/coffee-shops",
           method: "PUT"
         },
 
@@ -1227,10 +1227,10 @@ module.factory(
          *
          * Data properties:
          *
-         *  - `exists` – `{boolean=}` - 
+         *  - `exists` – `{boolean=}` -
          */
         "exists": {
-          url: urlBase + "/CoffeeShops/:id/exists",
+          url: urlBase + "/coffee-shops/:id/exists",
           method: "GET"
         },
 
@@ -1263,7 +1263,7 @@ module.factory(
          * </em>
          */
         "findById": {
-          url: urlBase + "/CoffeeShops/:id",
+          url: urlBase + "/coffee-shops/:id",
           method: "GET"
         },
 
@@ -1297,7 +1297,7 @@ module.factory(
          */
         "find": {
           isArray: true,
-          url: urlBase + "/CoffeeShops",
+          url: urlBase + "/coffee-shops",
           method: "GET"
         },
 
@@ -1330,7 +1330,7 @@ module.factory(
          * </em>
          */
         "findOne": {
-          url: urlBase + "/CoffeeShops/findOne",
+          url: urlBase + "/coffee-shops/findOne",
           method: "GET"
         },
 
@@ -1364,7 +1364,7 @@ module.factory(
          * This method returns no data.
          */
         "updateAll": {
-          url: urlBase + "/CoffeeShops/update",
+          url: urlBase + "/coffee-shops/update",
           method: "POST"
         },
 
@@ -1394,7 +1394,7 @@ module.factory(
          * This method returns no data.
          */
         "deleteById": {
-          url: urlBase + "/CoffeeShops/:id",
+          url: urlBase + "/coffee-shops/:id",
           method: "DELETE"
         },
 
@@ -1423,10 +1423,10 @@ module.factory(
          *
          * Data properties:
          *
-         *  - `count` – `{number=}` - 
+         *  - `count` – `{number=}` -
          */
         "count": {
-          url: urlBase + "/CoffeeShops/count",
+          url: urlBase + "/coffee-shops/count",
           method: "GET"
         },
 
@@ -1463,7 +1463,7 @@ module.factory(
          * </em>
          */
         "prototype$updateAttributes": {
-          url: urlBase + "/CoffeeShops/:id",
+          url: urlBase + "/coffee-shops/:id",
           method: "PUT"
         },
 
@@ -1495,16 +1495,16 @@ module.factory(
          *
          * Data properties:
          *
-         *  - `status` – `{string=}` - 
+         *  - `status` – `{string=}` -
          */
         "status": {
-          url: urlBase + "/CoffeeShops/status",
+          url: urlBase + "/coffee-shops/status",
           method: "GET"
         },
 
         // INTERNAL. Use Review.coffeeShop() instead.
         "::get::Review::coffeeShop": {
-          url: urlBase + "/Reviews/:id/coffeeShop",
+          url: urlBase + "/reviews/:id/coffeeShop",
           method: "GET"
         },
       }
@@ -1671,7 +1671,7 @@ module.factory(
          *
          *  - `id` – `{*}` - PersistedModel id
          *
-         *  - `filter` – `{object=}` - 
+         *  - `filter` – `{object=}` -
          *
          * @param {function(Array.<Object>,Object)=} successCb
          *   Success callback with two arguments: `value`, `responseHeaders`.
@@ -1721,7 +1721,7 @@ module.factory(
          *
          * Data properties:
          *
-         *  - `count` – `{number=}` - 
+         *  - `count` – `{number=}` -
          */
         R.reviews.count = function() {
           var TargetResource = $injector.get("Review");
@@ -1934,7 +1934,7 @@ module.factory(
          *
          *  - `id` – `{*}` - PersistedModel id
          *
-         *  - `filter` – `{object=}` - 
+         *  - `filter` – `{object=}` -
          *
          * @param {function(Array.<Object>,Object)=} successCb
          *   Success callback with two arguments: `value`, `responseHeaders`.
@@ -1984,7 +1984,7 @@ module.factory(
          *
          * Data properties:
          *
-         *  - `count` – `{number=}` - 
+         *  - `count` – `{number=}` -
          */
         R.reviewers.count = function() {
           var TargetResource = $injector.get("Reviewer");
@@ -2194,19 +2194,19 @@ module.factory(
   "Review",
   ['LoopBackResource', 'LoopBackAuth', '$injector', function(Resource, LoopBackAuth, $injector) {
     var R = Resource(
-      urlBase + "/Reviews/:id",
+      urlBase + "/reviews/:id",
       { 'id': '@id' },
       {
 
         // INTERNAL. Use Review.coffeeShop() instead.
         "prototype$__get__coffeeShop": {
-          url: urlBase + "/Reviews/:id/coffeeShop",
+          url: urlBase + "/reviews/:id/coffeeShop",
           method: "GET"
         },
 
         // INTERNAL. Use Review.reviewer() instead.
         "prototype$__get__reviewer": {
-          url: urlBase + "/Reviews/:id/reviewer",
+          url: urlBase + "/reviews/:id/reviewer",
           method: "GET"
         },
 
@@ -2244,7 +2244,7 @@ module.factory(
          * </em>
          */
         "create": {
-          url: urlBase + "/Reviews",
+          url: urlBase + "/reviews",
           method: "POST"
         },
 
@@ -2282,7 +2282,7 @@ module.factory(
          * </em>
          */
         "upsert": {
-          url: urlBase + "/Reviews",
+          url: urlBase + "/reviews",
           method: "PUT"
         },
 
@@ -2311,10 +2311,10 @@ module.factory(
          *
          * Data properties:
          *
-         *  - `exists` – `{boolean=}` - 
+         *  - `exists` – `{boolean=}` -
          */
         "exists": {
-          url: urlBase + "/Reviews/:id/exists",
+          url: urlBase + "/reviews/:id/exists",
           method: "GET"
         },
 
@@ -2347,7 +2347,7 @@ module.factory(
          * </em>
          */
         "findById": {
-          url: urlBase + "/Reviews/:id",
+          url: urlBase + "/reviews/:id",
           method: "GET"
         },
 
@@ -2381,7 +2381,7 @@ module.factory(
          */
         "find": {
           isArray: true,
-          url: urlBase + "/Reviews",
+          url: urlBase + "/reviews",
           method: "GET"
         },
 
@@ -2414,7 +2414,7 @@ module.factory(
          * </em>
          */
         "findOne": {
-          url: urlBase + "/Reviews/findOne",
+          url: urlBase + "/reviews/findOne",
           method: "GET"
         },
 
@@ -2448,7 +2448,7 @@ module.factory(
          * This method returns no data.
          */
         "updateAll": {
-          url: urlBase + "/Reviews/update",
+          url: urlBase + "/reviews/update",
           method: "POST"
         },
 
@@ -2478,7 +2478,7 @@ module.factory(
          * This method returns no data.
          */
         "deleteById": {
-          url: urlBase + "/Reviews/:id",
+          url: urlBase + "/reviews/:id",
           method: "DELETE"
         },
 
@@ -2507,10 +2507,10 @@ module.factory(
          *
          * Data properties:
          *
-         *  - `count` – `{number=}` - 
+         *  - `count` – `{number=}` -
          */
         "count": {
-          url: urlBase + "/Reviews/count",
+          url: urlBase + "/reviews/count",
           method: "GET"
         },
 
@@ -2547,93 +2547,93 @@ module.factory(
          * </em>
          */
         "prototype$updateAttributes": {
-          url: urlBase + "/Reviews/:id",
+          url: urlBase + "/reviews/:id",
           method: "PUT"
         },
 
         // INTERNAL. Use CoffeeShop.reviews.findById() instead.
         "::findById::CoffeeShop::reviews": {
-          url: urlBase + "/CoffeeShops/:id/reviews/:fk",
+          url: urlBase + "/coffee-shops/:id/reviews/:fk",
           method: "GET"
         },
 
         // INTERNAL. Use CoffeeShop.reviews.destroyById() instead.
         "::destroyById::CoffeeShop::reviews": {
-          url: urlBase + "/CoffeeShops/:id/reviews/:fk",
+          url: urlBase + "/coffee-shops/:id/reviews/:fk",
           method: "DELETE"
         },
 
         // INTERNAL. Use CoffeeShop.reviews.updateById() instead.
         "::updateById::CoffeeShop::reviews": {
-          url: urlBase + "/CoffeeShops/:id/reviews/:fk",
+          url: urlBase + "/coffee-shops/:id/reviews/:fk",
           method: "PUT"
         },
 
         // INTERNAL. Use CoffeeShop.reviews() instead.
         "::get::CoffeeShop::reviews": {
           isArray: true,
-          url: urlBase + "/CoffeeShops/:id/reviews",
+          url: urlBase + "/coffee-shops/:id/reviews",
           method: "GET"
         },
 
         // INTERNAL. Use CoffeeShop.reviews.create() instead.
         "::create::CoffeeShop::reviews": {
-          url: urlBase + "/CoffeeShops/:id/reviews",
+          url: urlBase + "/coffee-shops/:id/reviews",
           method: "POST"
         },
 
         // INTERNAL. Use CoffeeShop.reviews.destroyAll() instead.
         "::delete::CoffeeShop::reviews": {
-          url: urlBase + "/CoffeeShops/:id/reviews",
+          url: urlBase + "/coffee-shops/:id/reviews",
           method: "DELETE"
         },
 
         // INTERNAL. Use CoffeeShop.reviews.count() instead.
         "::count::CoffeeShop::reviews": {
-          url: urlBase + "/CoffeeShops/:id/reviews/count",
+          url: urlBase + "/coffee-shops/:id/reviews/count",
           method: "GET"
         },
 
         // INTERNAL. Use Reviewer.reviews.findById() instead.
         "::findById::Reviewer::reviews": {
-          url: urlBase + "/Reviewers/:id/reviews/:fk",
+          url: urlBase + "/reviewers/:id/reviews/:fk",
           method: "GET"
         },
 
         // INTERNAL. Use Reviewer.reviews.destroyById() instead.
         "::destroyById::Reviewer::reviews": {
-          url: urlBase + "/Reviewers/:id/reviews/:fk",
+          url: urlBase + "/reviewers/:id/reviews/:fk",
           method: "DELETE"
         },
 
         // INTERNAL. Use Reviewer.reviews.updateById() instead.
         "::updateById::Reviewer::reviews": {
-          url: urlBase + "/Reviewers/:id/reviews/:fk",
+          url: urlBase + "/reviewers/:id/reviews/:fk",
           method: "PUT"
         },
 
         // INTERNAL. Use Reviewer.reviews() instead.
         "::get::Reviewer::reviews": {
           isArray: true,
-          url: urlBase + "/Reviewers/:id/reviews",
+          url: urlBase + "/reviewers/:id/reviews",
           method: "GET"
         },
 
         // INTERNAL. Use Reviewer.reviews.create() instead.
         "::create::Reviewer::reviews": {
-          url: urlBase + "/Reviewers/:id/reviews",
+          url: urlBase + "/reviewers/:id/reviews",
           method: "POST"
         },
 
         // INTERNAL. Use Reviewer.reviews.destroyAll() instead.
         "::delete::Reviewer::reviews": {
-          url: urlBase + "/Reviewers/:id/reviews",
+          url: urlBase + "/reviewers/:id/reviews",
           method: "DELETE"
         },
 
         // INTERNAL. Use Reviewer.reviews.count() instead.
         "::count::Reviewer::reviews": {
-          url: urlBase + "/Reviewers/:id/reviews/count",
+          url: urlBase + "/reviewers/:id/reviews/count",
           method: "GET"
         },
       }
@@ -2786,7 +2786,7 @@ module.factory(
          *
          *  - `id` – `{*}` - PersistedModel id
          *
-         *  - `refresh` – `{boolean=}` - 
+         *  - `refresh` – `{boolean=}` -
          *
          * @param {function(Object,Object)=} successCb
          *   Success callback with two arguments: `value`, `responseHeaders`.
@@ -2822,7 +2822,7 @@ module.factory(
          *
          *  - `id` – `{*}` - PersistedModel id
          *
-         *  - `refresh` – `{boolean=}` - 
+         *  - `refresh` – `{boolean=}` -
          *
          * @param {function(Object,Object)=} successCb
          *   Success callback with two arguments: `value`, `responseHeaders`.
@@ -2869,7 +2869,7 @@ module.factory(
   "Reviewer",
   ['LoopBackResource', 'LoopBackAuth', '$injector', function(Resource, LoopBackAuth, $injector) {
     var R = Resource(
-      urlBase + "/Reviewers/:id",
+      urlBase + "/reviewers/:id",
       { 'id': '@id' },
       {
 
@@ -2904,7 +2904,7 @@ module.factory(
          * </em>
          */
         "prototype$__findById__accessTokens": {
-          url: urlBase + "/Reviewers/:id/accessTokens/:fk",
+          url: urlBase + "/reviewers/:id/accessTokens/:fk",
           method: "GET"
         },
 
@@ -2936,7 +2936,7 @@ module.factory(
          * This method returns no data.
          */
         "prototype$__destroyById__accessTokens": {
-          url: urlBase + "/Reviewers/:id/accessTokens/:fk",
+          url: urlBase + "/reviewers/:id/accessTokens/:fk",
           method: "DELETE"
         },
 
@@ -2975,25 +2975,25 @@ module.factory(
          * </em>
          */
         "prototype$__updateById__accessTokens": {
-          url: urlBase + "/Reviewers/:id/accessTokens/:fk",
+          url: urlBase + "/reviewers/:id/accessTokens/:fk",
           method: "PUT"
         },
 
         // INTERNAL. Use Reviewer.reviews.findById() instead.
         "prototype$__findById__reviews": {
-          url: urlBase + "/Reviewers/:id/reviews/:fk",
+          url: urlBase + "/reviewers/:id/reviews/:fk",
           method: "GET"
         },
 
         // INTERNAL. Use Reviewer.reviews.destroyById() instead.
         "prototype$__destroyById__reviews": {
-          url: urlBase + "/Reviewers/:id/reviews/:fk",
+          url: urlBase + "/reviewers/:id/reviews/:fk",
           method: "DELETE"
         },
 
         // INTERNAL. Use Reviewer.reviews.updateById() instead.
         "prototype$__updateById__reviews": {
-          url: urlBase + "/Reviewers/:id/reviews/:fk",
+          url: urlBase + "/reviewers/:id/reviews/:fk",
           method: "PUT"
         },
 
@@ -3010,7 +3010,7 @@ module.factory(
          *
          *  - `id` – `{*}` - User id
          *
-         *  - `filter` – `{object=}` - 
+         *  - `filter` – `{object=}` -
          *
          * @param {function(Array.<Object>,Object)=} successCb
          *   Success callback with two arguments: `value`, `responseHeaders`.
@@ -3029,7 +3029,7 @@ module.factory(
          */
         "prototype$__get__accessTokens": {
           isArray: true,
-          url: urlBase + "/Reviewers/:id/accessTokens",
+          url: urlBase + "/reviewers/:id/accessTokens",
           method: "GET"
         },
 
@@ -3066,7 +3066,7 @@ module.factory(
          * </em>
          */
         "prototype$__create__accessTokens": {
-          url: urlBase + "/Reviewers/:id/accessTokens",
+          url: urlBase + "/reviewers/:id/accessTokens",
           method: "POST"
         },
 
@@ -3096,7 +3096,7 @@ module.factory(
          * This method returns no data.
          */
         "prototype$__delete__accessTokens": {
-          url: urlBase + "/Reviewers/:id/accessTokens",
+          url: urlBase + "/reviewers/:id/accessTokens",
           method: "DELETE"
         },
 
@@ -3127,35 +3127,35 @@ module.factory(
          *
          * Data properties:
          *
-         *  - `count` – `{number=}` - 
+         *  - `count` – `{number=}` -
          */
         "prototype$__count__accessTokens": {
-          url: urlBase + "/Reviewers/:id/accessTokens/count",
+          url: urlBase + "/reviewers/:id/accessTokens/count",
           method: "GET"
         },
 
         // INTERNAL. Use Reviewer.reviews() instead.
         "prototype$__get__reviews": {
           isArray: true,
-          url: urlBase + "/Reviewers/:id/reviews",
+          url: urlBase + "/reviewers/:id/reviews",
           method: "GET"
         },
 
         // INTERNAL. Use Reviewer.reviews.create() instead.
         "prototype$__create__reviews": {
-          url: urlBase + "/Reviewers/:id/reviews",
+          url: urlBase + "/reviewers/:id/reviews",
           method: "POST"
         },
 
         // INTERNAL. Use Reviewer.reviews.destroyAll() instead.
         "prototype$__delete__reviews": {
-          url: urlBase + "/Reviewers/:id/reviews",
+          url: urlBase + "/reviewers/:id/reviews",
           method: "DELETE"
         },
 
         // INTERNAL. Use Reviewer.reviews.count() instead.
         "prototype$__count__reviews": {
-          url: urlBase + "/Reviewers/:id/reviews/count",
+          url: urlBase + "/reviewers/:id/reviews/count",
           method: "GET"
         },
 
@@ -3193,7 +3193,7 @@ module.factory(
          * </em>
          */
         "create": {
-          url: urlBase + "/Reviewers",
+          url: urlBase + "/reviewers",
           method: "POST"
         },
 
@@ -3231,7 +3231,7 @@ module.factory(
          * </em>
          */
         "upsert": {
-          url: urlBase + "/Reviewers",
+          url: urlBase + "/reviewers",
           method: "PUT"
         },
 
@@ -3260,10 +3260,10 @@ module.factory(
          *
          * Data properties:
          *
-         *  - `exists` – `{boolean=}` - 
+         *  - `exists` – `{boolean=}` -
          */
         "exists": {
-          url: urlBase + "/Reviewers/:id/exists",
+          url: urlBase + "/reviewers/:id/exists",
           method: "GET"
         },
 
@@ -3296,7 +3296,7 @@ module.factory(
          * </em>
          */
         "findById": {
-          url: urlBase + "/Reviewers/:id",
+          url: urlBase + "/reviewers/:id",
           method: "GET"
         },
 
@@ -3330,7 +3330,7 @@ module.factory(
          */
         "find": {
           isArray: true,
-          url: urlBase + "/Reviewers",
+          url: urlBase + "/reviewers",
           method: "GET"
         },
 
@@ -3363,7 +3363,7 @@ module.factory(
          * </em>
          */
         "findOne": {
-          url: urlBase + "/Reviewers/findOne",
+          url: urlBase + "/reviewers/findOne",
           method: "GET"
         },
 
@@ -3397,7 +3397,7 @@ module.factory(
          * This method returns no data.
          */
         "updateAll": {
-          url: urlBase + "/Reviewers/update",
+          url: urlBase + "/reviewers/update",
           method: "POST"
         },
 
@@ -3427,7 +3427,7 @@ module.factory(
          * This method returns no data.
          */
         "deleteById": {
-          url: urlBase + "/Reviewers/:id",
+          url: urlBase + "/reviewers/:id",
           method: "DELETE"
         },
 
@@ -3456,10 +3456,10 @@ module.factory(
          *
          * Data properties:
          *
-         *  - `count` – `{number=}` - 
+         *  - `count` – `{number=}` -
          */
         "count": {
-          url: urlBase + "/Reviewers/count",
+          url: urlBase + "/reviewers/count",
           method: "GET"
         },
 
@@ -3496,7 +3496,7 @@ module.factory(
          * </em>
          */
         "prototype$updateAttributes": {
-          url: urlBase + "/Reviewers/:id",
+          url: urlBase + "/reviewers/:id",
           method: "PUT"
         },
 
@@ -3534,9 +3534,9 @@ module.factory(
          *
          * The response body contains properties of the AccessToken created on login.
          * Depending on the value of `include` parameter, the body may contain additional properties:
-         * 
+         *
          *   - `user` - `{User}` - Data of the currently logged in user. (`include=user`)
-         * 
+         *
          *
          */
         "login": {
@@ -3552,7 +3552,7 @@ module.factory(
               return response.resource;
             }
           },
-          url: urlBase + "/Reviewers/login",
+          url: urlBase + "/reviewers/login",
           method: "POST"
         },
 
@@ -3594,7 +3594,7 @@ module.factory(
               return response.resource;
             }
           },
-          url: urlBase + "/Reviewers/logout",
+          url: urlBase + "/reviewers/logout",
           method: "POST"
         },
 
@@ -3609,11 +3609,11 @@ module.factory(
          *
          * @param {Object=} parameters Request parameters.
          *
-         *  - `uid` – `{string}` - 
+         *  - `uid` – `{string}` -
          *
-         *  - `token` – `{string}` - 
+         *  - `token` – `{string}` -
          *
-         *  - `redirect` – `{string}` - 
+         *  - `redirect` – `{string}` -
          *
          * @param {function(Object,Object)=} successCb
          *   Success callback with two arguments: `value`, `responseHeaders`.
@@ -3628,7 +3628,7 @@ module.factory(
          * This method returns no data.
          */
         "confirm": {
-          url: urlBase + "/Reviewers/confirm",
+          url: urlBase + "/reviewers/confirm",
           method: "GET"
         },
 
@@ -3663,56 +3663,56 @@ module.factory(
          * This method returns no data.
          */
         "resetPassword": {
-          url: urlBase + "/Reviewers/reset",
+          url: urlBase + "/reviewers/reset",
           method: "POST"
         },
 
         // INTERNAL. Use CoffeeShop.reviewers.findById() instead.
         "::findById::CoffeeShop::reviewers": {
-          url: urlBase + "/CoffeeShops/:id/reviewers/:fk",
+          url: urlBase + "/coffee-shops/:id/reviewers/:fk",
           method: "GET"
         },
 
         // INTERNAL. Use CoffeeShop.reviewers.destroyById() instead.
         "::destroyById::CoffeeShop::reviewers": {
-          url: urlBase + "/CoffeeShops/:id/reviewers/:fk",
+          url: urlBase + "/coffee-shops/:id/reviewers/:fk",
           method: "DELETE"
         },
 
         // INTERNAL. Use CoffeeShop.reviewers.updateById() instead.
         "::updateById::CoffeeShop::reviewers": {
-          url: urlBase + "/CoffeeShops/:id/reviewers/:fk",
+          url: urlBase + "/coffee-shops/:id/reviewers/:fk",
           method: "PUT"
         },
 
         // INTERNAL. Use CoffeeShop.reviewers() instead.
         "::get::CoffeeShop::reviewers": {
           isArray: true,
-          url: urlBase + "/CoffeeShops/:id/reviewers",
+          url: urlBase + "/coffee-shops/:id/reviewers",
           method: "GET"
         },
 
         // INTERNAL. Use CoffeeShop.reviewers.create() instead.
         "::create::CoffeeShop::reviewers": {
-          url: urlBase + "/CoffeeShops/:id/reviewers",
+          url: urlBase + "/coffee-shops/:id/reviewers",
           method: "POST"
         },
 
         // INTERNAL. Use CoffeeShop.reviewers.destroyAll() instead.
         "::delete::CoffeeShop::reviewers": {
-          url: urlBase + "/CoffeeShops/:id/reviewers",
+          url: urlBase + "/coffee-shops/:id/reviewers",
           method: "DELETE"
         },
 
         // INTERNAL. Use CoffeeShop.reviewers.count() instead.
         "::count::CoffeeShop::reviewers": {
-          url: urlBase + "/CoffeeShops/:id/reviewers/count",
+          url: urlBase + "/coffee-shops/:id/reviewers/count",
           method: "GET"
         },
 
         // INTERNAL. Use Review.reviewer() instead.
         "::get::Review::reviewer": {
-          url: urlBase + "/Reviews/:id/reviewer",
+          url: urlBase + "/reviews/:id/reviewer",
           method: "GET"
         },
 
@@ -3737,7 +3737,7 @@ module.factory(
          *   from the server.
          */
         "getCurrent": {
-           url: urlBase + "/Reviewers" + "/:id",
+           url: urlBase + "/reviewers" + "/:id",
            method: "GET",
            params: {
              id: function() {
@@ -3959,7 +3959,7 @@ module.factory(
          *
          *  - `id` – `{*}` - User id
          *
-         *  - `filter` – `{object=}` - 
+         *  - `filter` – `{object=}` -
          *
          * @param {function(Array.<Object>,Object)=} successCb
          *   Success callback with two arguments: `value`, `responseHeaders`.
@@ -4009,7 +4009,7 @@ module.factory(
          *
          * Data properties:
          *
-         *  - `count` – `{number=}` - 
+         *  - `count` – `{number=}` -
          */
         R.reviews.count = function() {
           var TargetResource = $injector.get("Review");

@@ -1,0 +1,12 @@
+{
+  "ids": {
+    "ManagerHost": 2,
+    "LoadBalancer": 1
+  },
+  "models": {
+    "ManagerHost": {
+      "0de702ab-8e53-415a-9211-077f5b9bdd43": "{\"id\":\"0de702ab-8e53-415a-9211-077f5b9bdd43\",\"host\":\"localhost\",\"port\":8701,\"actions\":[\"delete\",\"edit\",\"env-set\",\"env-get\",\"stop\",\"restart\",\"cluster-restart\",\"license-push\"],\"protocol\":\"http\",\"created\":1472970919741,\"error\":null,\"errorType\":null,\"app\":{\"name\":\"coffeeShop\",\"version\":null,\"port\":3001},\"processes\":{\"pids\":[{\"parentPid\":31345,\"pid\":31748,\"workerId\":0,\"listeningSockets\":[],\"isTrackingObjects\":false,\"isProfiling\":false,\"isTracing\":false,\"debugger\":{\"running\":false,\"port\":null},\"watchdogTimeout\":0,\"watchdogStallout\":0,\"isSnapshotting\":false,\"startTime\":\"2016-09-04T06:38:06.966Z\",\"stopTime\":null,\"stopReason\":\"\",\"id\":2,\"serviceInstanceId\":1},{\"parentPid\":31748,\"pid\":31892,\"workerId\":3,\"listeningSockets\":[{\"addressType\":4,\"address\":\"0.0.0.0\",\"port\":3001}],\"isTrackingObjects\":false,\"isProfiling\":false,\"isTracing\":false,\"debugger\":{\"running\":false,\"port\":null},\"watchdogTimeout\":0,\"watchdogStallout\":0,\"isSnapshotting\":false,\"startTime\":\"2016-09-04T06:39:36.884Z\",\"stopTime\":null,\"stopReason\":\"\",\"id\":4,\"serviceInstanceId\":1},{\"parentPid\":31748,\"pid\":31896,\"workerId\":5,\"listeningSockets\":[{\"addressType\":4,\"address\":\"0.0.0.0\",\"port\":3001}],\"isTrackingObjects\":false,\"isProfiling\":false,\"isTracing\":false,\"debugger\":{\"running\":false,\"port\":null},\"watchdogTimeout\":0,\"watchdogStallout\":0,\"isSnapshotting\":false,\"startTime\":\"2016-09-04T06:39:45.870Z\",\"stopTime\":null,\"stopReason\":\"\",\"id\":6,\"serviceInstanceId\":1}]}}"
+    },
+    "LoadBalancer": {}
+  }
+}
